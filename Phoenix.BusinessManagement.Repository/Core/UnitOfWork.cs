@@ -26,6 +26,6 @@ namespace Phoenix.BusinessManagement.Repository.Core
             _dbContext.Dispose();
         }
 
-        public IHealthCheckRepository HealthCheckRepository { get; set; }
+        public IHealthCheckRepository HealthCheckRepository { get; private set; }
     }
 }

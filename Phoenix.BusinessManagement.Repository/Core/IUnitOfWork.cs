@@ -6,7 +6,7 @@ namespace Phoenix.BusinessManagement.Repository.Core
     {
         Task<int> Complete();
 
-        public IHealthCheckRepository HealthCheckRepository { get; set; }
+        public IHealthCheckRepository HealthCheckRepository { get; }
     }
 }
 

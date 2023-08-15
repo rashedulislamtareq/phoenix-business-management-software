@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Phoenix.BusinessManagement.API.ServiceExtensions;
 using Phoenix.BusinessManagement.ClientModel.Mapper;
 using Phoenix.BusinessManagement.Repository.Context;
+using Phoenix.BusinessManagement.Repository.Core;
+using Phoenix.BusinessManagement.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -17,6 +20,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddServices();
 
 var app = builder.Build();
 
