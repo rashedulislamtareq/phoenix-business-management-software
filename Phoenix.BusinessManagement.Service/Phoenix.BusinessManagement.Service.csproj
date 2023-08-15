@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Phoenix.BusinessManagement.ClientModel\Phoenix.BusinessManagement.ClientModel.csproj" />
+    <ProjectReference Include="..\Phoenix.BusinessManagement.Entity\Phoenix.BusinessManagement.Entity.csproj" />
     <ProjectReference Include="..\Phoenix.BusinessManagement.Repository\Phoenix.BusinessManagement.Repository.csproj" />
   </ItemGroup>
 
